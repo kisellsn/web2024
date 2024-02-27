@@ -2,7 +2,7 @@
     "data": {
         "labs": {
             "lb1": {
-                "title": "Лаа1",
+                "title": "Лаб1",
                 "rel_path": "./html/lab/lab_1/",
                 "buttons": {
                     "sd_btn": {
