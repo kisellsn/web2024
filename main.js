@@ -21,7 +21,7 @@ async function insertBlock(sourceHTML, linkCSS = "") {
     extraCssLink.href = "";
   }
 }
-async function getSiteData(source = "/project_structure.json") {
+async function getSiteData(source = "project_structure.json") {
   const response = await fetch(source);
   const { data } = await response.json();
   site_data = data;
