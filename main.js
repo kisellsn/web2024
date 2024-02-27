@@ -5,7 +5,7 @@ const extraCssLink = document.getElementById("extra_css"); // додаткови
 const fadeIn = [{ opacity: 0}, { opacity: 0.33 },{ opacity: 0.66 }, { opacity: 1}];    // константи для анімації
 const timing = { duration: 300, iterations: 1 };                                         //
 
-let site_data = getSiteData(); // структура з project_structure.json
+let site_data = getSiteData(); // структура з structure.json
 let current_lb = {};           // об'єкт поточної лаби
 let current_lb_btn = null;
 let current_aside_btn = null;
@@ -21,7 +21,7 @@ async function insertBlock(sourceHTML, linkCSS = "") {
     extraCssLink.href = "";
   }
 }
-async function getSiteData(source = "/web2024/project_structure.json") {
+async function getSiteData(source = "/web2024/structure.json") {
   const response = await fetch(source);
   const { data } = await response.json();
   site_data = data;
