@@ -1,0 +1,48 @@
+{
+    "data": {
+        "labs": {
+            "lb1": {
+                "title": "Лаа1",
+                "rel_path": "./html/lab/lab_1/",
+                "buttons": {
+                    "sd_btn": {
+                        "title": "Опис предметного середовища",
+                        "html_file": "sub_env.html",
+                        "css_file": "sub_env.css"
+                    },
+                    "topic_btn": {
+                        "title": "Тема, мета місце розташування лаби №1",
+                        "html_file": "topic.html",
+                        "css_file": "topic.css"
+                    },
+                    "structure_btn": {
+                        "title": "Структура документа",
+                        "html_file": "structure.html",
+                        "css_file": "structure.css"
+                    },
+                    "tables_btn": {
+                        "title": "Таблиці",
+                        "html_file": "tables.html",
+                        "css_file": "tables.css"
+                    },
+                    "forms_btn": {
+                        "title": "Форми",
+                        "html_file": "forms.html",
+                        "css_file": "forms.css"
+                    },
+                    "imgs_btn": {
+                        "title": "Зображення",
+                        "html_file": "imgs.html",
+                        "css_file": "imgs.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.inserted__table {
+    line-height: 1.4;
+    border-collapse: collapse;
+    caption {
+        padding: 1% 0;
+    }
+    tr, td, th {
+        padding: 7px;
+        border: 1px solid #9dc08b;
+    }
+
+    td {
+        text-align: left;
+    }
+    
+}
