@@ -1,0 +1,41 @@
+<body>
+      <section class="inserted__title">
+            <h2>Використання каскадних таблиць стилів</h2>
+      </section>
+      <section class="inserted__content">
+            <p>Існує кілька способів підключення стилів до веб-сторінки:</p>
+            <ol>
+                <li>
+                    <b>Внутрішній (Inline) CSS:</b> Стилі можуть бути визначені безпосередньо в HTML-елементах за допомогою атрибута style. Наприклад:
+                    <pre class="prettyprint">&lt;p style="color: blue; font-size: 16px;"&gt;Це текст з внутрішнім стилем.&lt;/p&gt;</pre>
+
+                </li>
+                <li>
+                    <b>Зовнішній (External) CSS:</b> Стилі можуть бути визначені у зовнішньому CSS-файлі і підключені до HTML-документу за допомогою тегу <link>. Наприклад:
+                    <pre class="prettyprint">
+                        &lt;head&gt;
+                            &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+                        &lt;/head&gt;
+                    </pre>
+                </li>
+                <li>
+                    <b>Внутрішній (Internal) CSS:</b> Стилі можуть бути визначені всередині тегу <code>&lt;style&gt;</code> в розділі <code>&lt;head&gt;</code> HTML-документу. Наприклад:
+                    <pre class="prettyprint">
+                        &lt;head&gt;
+                            &lt;style&gt;
+                                p {
+                                    color: red;
+                                    font-size: 18px;
+                                }
+                            &lt;/style&gt;
+                        &lt;/head&gt;
+                    </pre>
+                </li>
+                <li>
+                    <b>@import в CSS:</b> Для підключення стилів з іншого CSS-файлу можна використовувати правило @import всередині CSS-файлу. Наприклад:
+                    <pre class="prettyprint">@import url("styles.css");</pre>
+                </li>
+
+            </ol>
+      </section>
+</body>

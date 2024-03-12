@@ -1,0 +1,62 @@
+<body>
+  <section class="inserted__title">
+    <h2>Cусідні, дочірні селектори, селектор атрибута та універсальний селектор</h2>
+  </section>
+  <section class="inserted__content">
+    <p>
+        Якщо потрібно вибрати певну підмножину елементів без додавання зайвих класів, можна скористатися різними видами селекторів у CSS.
+    </p>
+    <p>
+        <b>Сусідній селектор (+):</b> Вибирає елемент, що йде безпосередньо після іншого елемента.
+    </p>
+    <pre class="prettyprint">
+        h2 + p {
+            font-style: italic;
+        }</pre>
+    <p>Цей стиль застосується до всіх <code>&lt;p&gt;</code> елементів, які йдуть безпосередньо після <code>&lt;h2&gt;</code>.</p>
+    <p>
+       <b>Дочірній селектор:</b>  Вибирає всіх прямих дочірніх елементів вказаного батьківського елемента.
+    </p>
+    <pre class="prettyprint">
+        .inserted__content p {
+              padding: 0.5em;
+        }</pre>
+    <p>
+        Синтаксис такий, що спочатку записується батьківський селектор, а після нього через пробіл - дочірній.
+        У даному випадку вказаний внутрішній відступ буде застосвано до тегів <code>&lt;p&gt;</code>, які розташовані всередині елементу з класом
+        <code>".inserted__content"</code>.
+    </p>
+    <p>
+        <b>Селектори атрибутів:</b>
+        За допомогою даних селекторів можна стилізувати елементи HTML, які мають визначені атрибути або значення атрибутів.
+    </p>
+    <p>Всі CSS селектори атрибутів:</p>
+    <ul>
+        <li><code>[attribute]</code> - обирає всі елементи з атрибутом "attribute";</li>
+        <li><code>[attribute=value]</code> - де значення атрибута дорівнює value;</li>
+        <li><code>[attribute~=value]</code> - елементи з атрибутом "attribute", що містить слово "value";</li>
+        <li><code>[attribute|=value]</code> - елементи з атрибутом "attribute", що дорівнює або починається з value;</li>
+        <li><code>[attribute^=value]</code> - починається з value;</code></li>
+        <li><code>[attribute=value]</code> - закінчується на value;</li>
+        <li><code>[attribute*=value]</code> - містить хоча б одне value.</li>
+    </ul>
+
+    <p>Наприклад, вибір кнопок звітів лабораторних робіт:</p>
+    <pre class="prettyprint">
+        for (button of document.querySelectorAll("button[id^='lb']")) {
+            button.addEventListener("click", labButtonHandler);
+        }</pre>
+
+    <p>
+       <b>Універсальний селектор (*):</b>  Вибирає всі елементи на сторінці.
+    </p>
+    <pre class="prettyprint">
+        * {
+            margin: 0;
+            padding: 0;
+        }</pre>
+    <p>
+        Цей стиль застосується до всіх елементів на сторінці і обнулить значення margin та padding.
+    </p>
+  </section>
+</body>

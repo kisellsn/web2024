@@ -41,8 +41,53 @@
                         "css_file": "conclusion.css"
                     }
                 }
+            },
+            "lb2": {
+                "title": "Лаб2",
+                "rel_path": "./html/lab/lab_2/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема, мета місце розташування лаби №2",
+                        "html_file": "topic.html",
+                        "css_file": "topic.css"
+                    },
+                    "enable_css_btn": {
+                        "title": "Способи підключення стилів",
+                        "html_file": "enable_css.html",
+                        "css_file": "enable_css.css"
+                    },
+                    "tag_selector_btn": {
+                        "title": "Селектори тегу",
+                        "html_file": "tag_selector.html",
+                        "css_file": "tag_selector.css"
+                    },
+                    "class_selectors_btn": {
+                        "title": "Селектори класу",
+                        "html_file": "class_selectors.html",
+                        "css_file": "class_selectors.css"
+                    },
+                    "id_selector_btn": {
+                        "title": "Селектори ідентифікаторів",
+                        "html_file": "id_selector.html",
+                        "css_file": "id_selector.css"
+                    },
+                    "other_selectors_btn": {
+                        "title": "Інші селектори",
+                        "html_file": "other_selectors.html",
+                        "css_file": "other_selectors.css"
+                    },
+                    "text_elements_btn": {
+                        "title": "CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий",
+                        "html_file": "text_elements.html",
+                        "css_file": "text_elements.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки до ЛР2",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
             }
-
         }
     }
 }

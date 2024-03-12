@@ -1,0 +1,98 @@
+<body>
+    <section class="inserted__title">
+    
+        <h2>
+            Макет власного сайту.
+        </h2>
+      </section>
+      <section class="inserted__content">
+        <p>У якості прикладу власного сайту представляю даний звітний документ, який створений з викристанням 
+            технологій flexbox та grid.
+        </p>
+        <p> Основна технологія - flexbox. Ця технологія дозволяє позиціонувати елементи один відносно одного на сторінці,
+             встановлювати напрямок їх розташування, поведінку при зміні розмірів зовнішнього контейнера. 
+
+        </p>
+        <p>
+            Для застосування цієї технології необхідно встановити властивість контейнера обгортки <code>display: flex;</code>. 
+        </p>
+        <p>Сам контейнер - обгортка може мати наступні параметри:</p>
+        <ul>
+            <li>- flex-direction - напрямок елементів (column, row, column-reverse, row-reverse);</li>
+            <li>- flex-wrap -  чи можна переносити елементи на наступні рядки при стисканні;</li>
+            <li>- flex-flow - скорочення для двох вище наведених;</li>
+            <li>- justify-content - вирівнювання елементів вздовж основної вісі;</li>
+            <li>- align-items - вирівнювання перпенидикулярно основній вісі;</li>
+            <li>- align-content - вирівнювання не самих елементів, а ліній, в яких елементи розміщені.</li>
+            
+        </ul>
+        <p>Крім того, самі елементи можуть мати наступні властивості:</p>
+        <ul>
+            <li>- order - порядок елемента;</li>
+            <li>- flex-grow - чи дозволено елементу збільшуватись;</li>
+            <li>- flex-shrink - чи дозволено стискатись;</li>
+            <li>- flex-basis - початкові розміри елемента;</li>
+            <li>- flex - скорочення для flex-grow, flex-shrink та flex-basis;</li>
+            <li>- align-self - вирівнювання всередині контейнера;</li>
+        </ul>
+        <p>
+           Отже, використовувася наступний код для вирівнювання 1. хедера, 2. блоку кнопок (лаби), 3. основного вмісту та 4. футера сайту:
+        </p>
+        <pre class="prettyprint">
+            &lt;body class="body"&gt;
+                &lt;header class="header header--bordered"&gt;&lt;/header&gt;
+                &lt;section class="nav nav--row nav--bordered"&gt;&lt;/section&gt;
+                &lt;main class="main"&gt;&lt;/main&gt;
+                &lt;footer class="footer footer--bordered"&gt;&lt;/footer&gt;
+            &lt;/body&gt; 
+        </pre>
+        
+        <p>
+            Відповідно стилізовані вони були (в частині технології flexbox) наступним чином:
+        </p>
+        <pre class="prettyprint">
+            .body {
+                display: flex;
+                flex-direction: column;
+            }
+            .main {
+                flex: 1 1 auto;
+            }
+        </pre>
+        <p>Тобто, названі 4 елементи розташовані в flex контейнері колонкою (один над одним) - <code>flex-direction: column;</code></p>
+        <p>Елементу <code>.main</code> дозволено стискатись та збільшуватись, початково він займає весь вільний простір - <code>flex: 1 1 auto;</code></p>
+        <p>Технологія flexbox дозволяє позиціонувати елементи в усіх напрямках на площині, але при цьому доводиться застосовувати вкладення. Наприклад, як на даному сайті 
+            за допомогою <code>flex-direction: column;</code> розмістити по вертикалі основні елементи, а уже в елементі 
+            <code>&lt;header class="header header--bordered"&gt;&lt;/header&gt;</code> знову встановлювати контейнер <code>flex</code> та розміщувати елементи горизонтально. 
+        </p>
+        <p>Іноді, більш простою виявляється технологія <code>grid</code>, яка дозволяє без вкладень розташовувати емлементи як вертикально, так і горизонтально.  </p>
+        <p>Приклад її використання можна побачити в першій лабораторній роботі при позиціонуванні елементів форми:</p>
+        <h3>HTML</h3>
+        <pre class="prettyprint">
+            &lt;fieldset&gt;
+                &lt;label class="material-symbols-outlined" for="input_email"&gt;alternate_email&lt;/label&gt;
+                &lt;input type="email"&gt;
+                &lt;label class="material-symbols-outlined" for="input_password"&gt;lock&lt;/label&gt;
+                &lt;input type="password"&gt;
+                &lt;label class="material-symbols-outlined" for="date_of_birth"&gt;cake&lt;/label&gt;
+                &lt;input type="date"/&gt;
+                &lt;input class="form__button"/&gt;
+              &lt;/fieldset&gt;</pre>
+        <h3>CSS</h3>
+        <pre class="prettyprint">
+            fieldset {
+                display: grid;
+                gap: 10% 5%;
+                grid-template-columns: 3% 92%;
+                .form__button {
+                    grid-column: 2;
+                }
+            }</pre>
+        <p>Отже, <code>gap: 10% 5%;</code> встановлює відстані між "клітинками" сітки по вертикалі та по горизонталі. </p>
+        <p> <code>grid-template-columns: 3% 92%</code> встановлює відносну ширину двох колонок (перша вузька це елементи 
+            <code>&lt;label&gt;</code> з іконками). Елементи розміщуються почергово по двум колонкам без додаткових інструкцій.</p>
+        <p> <code>grid-column: 2;</code> розміщує елемент, до якого ця властивість застосована (у даному випадку кнопку) 
+            одразу у другу колонку, залишаючи першу колонку порожньою.</p>
+    </section>
+
+</body>

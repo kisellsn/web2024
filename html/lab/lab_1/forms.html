@@ -7,7 +7,7 @@
       Для реалізації форм був доданий додатковий файл <code>login.html</code> який у майбутьньому стане сторінкою для авторизації користувачів.
       Основним клкментом форми є тег <code>&lt;input&gt;</code>. Приклад форми:
     </p>
-    <pre>
+    <pre class="prettyprint">
       <code>
       &lt;form&gt;
           &lt;h3&gt;Login Here&lt;/h3&gt;
@@ -16,11 +16,19 @@
           &lt;label for="password"&gt;Password&lt;/label&gt;
           &lt;input type="password" id="password" name="password" required&gt;
           &lt;input type="submit" value="Login" class="custom-submit"&gt;
-          &lt;div id="singup"&gt;
-            &lt;a href="#"&gt;Don't have an account? Sign Up&lt;/a&gt;
-          &lt;/div&gt;
       &lt;/form&gt;
       </code>
     </pre>
+    <div>
+        <form>
+            <h3>Login Here</h3>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" required>
+            <input type="submit" value="Login" class="custom-submit">
+        </form>
+    </div>
+
   </section>
 </body>
