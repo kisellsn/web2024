@@ -10,5 +10,10 @@
     p {
         padding: 0.5em;
     }
+    .track_cover{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
 
 }
