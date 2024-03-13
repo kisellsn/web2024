@@ -14,6 +14,9 @@
             font-style: italic;
         }</pre>
     <p>Цей стиль застосується до всіх <code>&lt;p&gt;</code> елементів, які йдуть безпосередньо після <code>&lt;h2&gt;</code>.</p>
+      <h2>
+      <p>Example text</p>
+    </h2>
     <p>
        <b>Дочірній селектор:</b>  Вибирає всіх прямих дочірніх елементів вказаного батьківського елемента.
     </p>
@@ -33,7 +36,7 @@
     <p>Всі CSS селектори атрибутів:</p>
     <ul>
         <li><code>[attribute]</code> - обирає всі елементи з атрибутом "attribute";</li>
-        <li><code>[attribute=value]</code> - де значення атрибута дорівнює value;</li>
+        <li class="red"><code>[attribute=value]</code> - де значення атрибута дорівнює value;</li>
         <li><code>[attribute~=value]</code> - елементи з атрибутом "attribute", що містить слово "value";</li>
         <li><code>[attribute|=value]</code> - елементи з атрибутом "attribute", що дорівнює або починається з value;</li>
         <li><code>[attribute^=value]</code> - починається з value;</code></li>
@@ -41,8 +44,9 @@
         <li><code>[attribute*=value]</code> - містить хоча б одне value.</li>
     </ul>
 
+
     <p>Наприклад, вибір кнопок звітів лабораторних робіт:</p>
-    <pre class="prettyprint">
+    <pre class="prettyprint red" >
         for (button of document.querySelectorAll("button[id^='lb']")) {
             button.addEventListener("click", labButtonHandler);
         }</pre>

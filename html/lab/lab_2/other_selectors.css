@@ -10,5 +10,8 @@
     p {
         padding: 0.5em;
     }
+    li[class=red] {
+      color: red;
+    }
    
 }
