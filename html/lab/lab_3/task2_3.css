@@ -1,0 +1,74 @@
+.inserted__content {
+    width: 800px;
+    height: 1000px;
+    border-collapse: collapse;
+    font-weight: bold;
+    margin: auto;
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+    .center_content {
+        width: 800px;
+        height: 840px;
+        text-align: center;
+    }
+    .red {
+        background-color: red;
+    }
+    .border {
+        border: 1px solid black;
+    }
+    .bheader {
+        height: 80px;
+        text-align: right;
+        padding: 20px 10px;
+    }
+    .bfooter {
+        height: 80px;
+        padding: 20px 10px;
+    }
+    #wblock {
+        width: 300px;
+        height: 40px;
+        float: left;
+        background-color: white;
+    }
+
+    #left {
+        width: 220px;
+        height: 840px;
+        border-right: 1px solid black;
+        float: left;
+        padding: 10px;
+    }
+    #right {
+        width: 578px;
+        height: 840px;
+        float: left;
+        padding: 30px;
+    }
+    #rblock {
+        width: 518px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    #block3 {
+        width: 258px;
+        height: 700px;
+        float: left;
+        margin-top: 0;
+        padding: 10px;
+    }
+    #block4 {
+        width: 240px;
+        height: 700px;
+        float: left;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+}
+

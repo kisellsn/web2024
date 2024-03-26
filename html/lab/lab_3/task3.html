@@ -1,0 +1,173 @@
+<body>
+    <img src="../../../img/kisellsn.github.io_web2024lab3-3_.png" width="100%">
+
+    <h2>HTML</h2>
+    <pre class="prettyprint">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Task 3&lt;/title&gt;
+            &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;header class="menu"&gt;
+            &lt;a href=""&gt;Форми навчання&lt;/a&gt;
+            &lt;a href=""&gt;Заходи&lt;/a&gt;
+            &lt;a href=""&gt;Про Академію&lt;/a&gt;
+            &lt;a href=""&gt;Контакти&lt;/a&gt;
+            &lt;label for="select_city" hidden&gt;&lt;/label&gt;
+            &lt;select name="select_city" id="select_city"&gt;
+                &lt;option value="Київ"&gt;Київ&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section id="first"&gt;
+                &lt;h2&gt;Для кого розроблена програма&lt;/h2&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;Школярі та випускники (15-18 років)&lt;/h3&gt;
+                            &lt;p&gt;отримають першу професію, не відкладаючи на потім свою мрію стати програмістом.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="img.png" alt="image"&gt;
+                    &lt;/li&gt;
+                    &lt;li class="reverse"&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;Студенти ВНЗ (18-23 роки)&lt;/h3&gt;
+                            &lt;p&gt;освоять другу спеціальність паралельно з університетською освітою.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="img.png" alt="image"&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;Представники інших професій (23-55 років)&lt;/h3&gt;
+                            &lt;p&gt;яких не влаштовує поточна кар'єрна і фінансова перспектива, зможуть перевчитися на розробника ПЗ і отримати затребувану професію.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="img.png" alt="image"&gt;
+                    &lt;/li&gt;
+                    &lt;li class="reverse"&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;Всі бажаючі підвищити ІТ-кваліфікацію&lt;/h3&gt;
+                            &lt;p&gt;систематизують свої знання і отримають робочі навички, затребувані сучасному ІТ.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;img src="img.png" alt="image"&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/section&gt;
+            &lt;section id="second"&gt;
+                &lt;h2&gt;Як проходить навчання&lt;/h2&gt;
+                &lt;div&gt;
+                    &lt;img src="img.png" alt="image"&gt;
+                    &lt;img src="img.png" alt="image"&gt;
+                    &lt;img src="img.png" alt="image"&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;section id="third"&gt;
+                &lt;h2&gt;Партнери Академії&lt;/h2&gt;
+                &lt;div id="partners"&gt;
+                    &lt;img src="img_1.png" alt="image"&gt;
+                    &lt;div&gt;
+                        &lt;h3&gt;Luxoft&lt;/h3&gt;
+                        &lt;p&gt;&lt;span class="highlight"&gt;Luxoft&lt;/span&gt; - глобальна технологічна компанія, одна із лідерів на ринку. послуг цифрової трансформації та створення програмних продуктів Luxoft пропонує індивідуальні ІТ-рішення, які заохочують до змін у бізнесах клієнтів в усьому світі.&lt;/p&gt;
+                        &lt;p&gt;Luxoft об'єднує понад 13.000 спеціалістів із 22 країн світу зі штаб- квартирою у м. Цуг, Швейцарія. Україна є однією з найпотужніших локацій в географії Luxoft. Близько 3500 фахівців усіх ключових напрямків зосереджені в офісах Києва, Одеси і Дніпра.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h2>CSS</h2>
+    <pre class="prettyprint">
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+        main {
+            background-color: #eaeaea;
+            padding-bottom: 50px;
+            font-size: larger;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px;
+        }
+        .menu select {
+            flex-basis: 200px;
+        }
+        .menu > * {
+            background-color: #000000d4;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        p {
+            color: #6f6f6f;
+        }
+        img {
+            object-fit: contain;
+            max-width: 400px;
+            min-width: 90px;
+        }
+        h2 {
+            text-align: center;
+            font-size: xx-large;
+            padding: 40px;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #3ba4a8;
+        }
+        #first ul{
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 3%;
+        }
+        #first ul li {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px;
+            width: 320px;
+            min-width: 120px;
+        }
+        #first ul li.reverse {
+            flex-direction: column-reverse;
+        }
+    #second div {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 5px;
+        padding-left: 5px;
+        gap: 3%;
+    }
+    #partners {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #partners img {
+        min-width: 450px;
+        padding-right: 5px;
+    }
+    #partners > div {
+        width: 45%;
+    }
+    #partners > div > * {
+        text-align: left;
+    }
+
+    </pre>
+
+</body>

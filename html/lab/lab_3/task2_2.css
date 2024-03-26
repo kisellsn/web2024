@@ -1,0 +1,28 @@
+.inserted__content {
+    table {
+        width: 100%;
+        min-height: 800px;
+        font-weight: bold;
+        margin: auto;
+        border-collapse: collapse;
+    }
+    table td {
+        border: 1px solid black;
+    }
+    .theader, .tfooter {
+        height: 80px;
+        color: white;
+        padding-left: 50px;
+        padding-bottom: 15px;
+        vertical-align: bottom;
+    }
+    .table_center {
+        text-align: center;
+    }
+    .blue {
+        background-color: blue;
+    }
+    .yellow {
+        background-color: yellow;
+    }
+}

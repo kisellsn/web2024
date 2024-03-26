@@ -11,15 +11,15 @@ let currentLabButton = null;
 let currentAsideButton = null;
 
 async function insertContent(htmlSource, cssLink = "") {
-  let response = await fetch(htmlSource);
-  if (response.status == 200) {
-    insertionPoint.innerHTML = await response.text();
-    insertionPoint.animate(fadeInAnimation, animationTiming);
-    additionalCssLink.href = cssLink;
-  } else {
-    insertionPoint.innerHTML = `<p class="loading">${response.statusText}</p> <br><p class="loading">Sorry, the file has not been added yet</p>`;
-    additionalCssLink.href = "";
-  }
+    let response = await fetch(htmlSource);
+    if (response.status == 200) {
+        insertionPoint.innerHTML = await response.text();
+        insertionPoint.animate(fadeInAnimation, animationTiming);
+        additionalCssLink.href = cssLink;
+    } else {
+        insertionPoint.innerHTML = `<p class="loading">${response.statusText}</p> <br><p class="loading">Sorry, the file has not been added yet</p>`;
+        additionalCssLink.href = "";
+    }
 }
 
 async function fetchSiteData(source = "/web2024/structure.json") {
@@ -31,7 +31,6 @@ async function fetchSiteData(source = "/web2024/structure.json") {
 for (button of document.querySelectorAll("button[id^='lb']")) {
     button.addEventListener("click", labButtonHandler);
 }
-
 function setActiveButton(previousButton, newButton) {
     if (previousButton) {
         previousButton.parentElement.classList.remove("active");
@@ -48,6 +47,7 @@ function labButtonHandler(event) {
     for (button in currentLab.buttons) {
         createAsideButton(button);
     }
+
     if (asideButtonsContainer.firstChild) {
         asideButtonsContainer.style.display = "flex";
         asideButtonsContainer.firstChild.firstChild.click();
@@ -74,9 +74,9 @@ function createAsideButton(buttonName) {
 }
 
 async function asideButtonHandler(event) {
-  await insertContent(this.htmlFile, this.cssFile);
-  setActiveButton(currentAsideButton, event.target);
-  currentAsideButton = event.target;
-  currentAsideButton.parentElement.classList.add("active");
-  PR.prettyPrint();
+    await insertContent(this.htmlFile, this.cssFile);
+    setActiveButton(currentAsideButton, event.target);
+    currentAsideButton = event.target;
+    currentAsideButton.parentElement.classList.add("active");
+    PR.prettyPrint();
 }
