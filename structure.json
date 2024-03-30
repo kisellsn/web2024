@@ -143,38 +143,13 @@
                         "html_file": "topic.html",
                         "css_file": "topic.css"
                     },
-                    "task1_btn": {
-                        "title": "Завдання 1",
-                        "html_file": "task1.html",
-                        "css_file": "task1.css"
-                    },
-                    "task2_1_btn": {
-                        "title": "Завдання 2 Фіксована таблична верстка",
-                        "html_file": "task2_1.html",
-                        "css_file": "task2_1.css"
-                    },
-                    "task2_2_btn": {
-                        "title": "Завдання 2 Гумова таблична верстка",
-                        "html_file": "task2_2.html",
-                        "css_file": "task2_2.css"
-                    },
-                    "task2_3_btn": {
-                        "title": "Завдання 2 Фіксована блокова верстка",
-                        "html_file": "task2_3.html",
-                        "css_file": "task2_3.css"
-                    },
-                    "task2_4_btn": {
-                        "title": "Завдання 2 Гумова блокова верстка",
-                        "html_file": "task2_4.html",
-                        "css_file": "task2_4.css"
-                    },
-                    "task3_btn": {
-                        "title": "Завдання 3 FLEXBOX",
-                        "html_file": "task3.html",
-                        "css_file": "task3.css"
+                    "result_btn": {
+                        "title": "Результат",
+                        "html_file": "result.html",
+                        "css_file": "result.css"
                     },
                     "conclusion_btn": {
-                        "title": "Висновки до ЛР3",
+                        "title": "Висновки до ЛР4",
                         "html_file": "conclusion.html",
                         "css_file": "conclusion.css"
                     }

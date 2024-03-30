@@ -1,0 +1,43 @@
+<style>
+    .inserted__content{
+        padding: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+        margin-top: 20px;
+        pre{
+            margin-top: 20px;
+        }
+    }
+    .inserted__title{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 class="inserted__title">ВИСНОВКИ</h1>
+    <div class="inserted__content">
+
+        <p>
+            У застосунку "Каталог музики MeloHub" використовується адаптивна верстка.
+        </p>
+        <p>
+            Такий макет включає в себе використання медіа-запитів,
+            з відповідними брейкпоінтами, а саме:
+            1024px для комп`ютерних моніторів,  від 768px до 1023px для планшетів, та менше 767px для смартфонів.
+        </p>
+        <p>
+            Саме медіа-запити допомагають нам адаптувати розмір веб-сторінки та її елементів до розмірів екрану користувача
+        </p>
+        <pre class="pretty_print">
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                /*стилі для планшетів*/
+            }
+
+            @media screen and (max-width: 767px) {
+                /*стилі для телефонів*/
+            }
+        </pre>
+
+    </div>
+
+</body>
