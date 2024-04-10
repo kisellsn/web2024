@@ -154,6 +154,27 @@
                         "css_file": "conclusion.css"
                     }
                 }
+            },
+            "lb5": {
+                "title": "Лаб5",
+                "rel_path": "./html/lab/lab_5/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема, мета місце розташування лаби №5",
+                        "html_file": "topic.html",
+                        "css_file": "topic.css"
+                    },
+                    "result_btn": {
+                        "title": "Результат",
+                        "html_file": "result.html",
+                        "css_file": "result.css"
+                    },
+                    "conclusion_btn": {
+                        "title": "Висновки до ЛР5",
+                        "html_file": "conclusion.html",
+                        "css_file": "conclusion.css"
+                    }
+                }
             }
         }
     }
