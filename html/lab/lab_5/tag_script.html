@@ -1,0 +1,82 @@
+<body>
+    <section class="inserted__title">
+         <h2>Тег script</h2>
+    </section>
+    <section class="inserted__content">
+        <p>
+            На HTML-сторінці JavaScript код має бути вставлений між тегами &lt;script&gt; та &lt;/script&gt;.
+            Але є декілька способів це реалізувати.
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Помістити &lt;script&gt;...&lt;/script&gt; до тегу &lt;head&gt;:
+                </p>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;script&gt;
+                            function myFunction() {
+                              document.getElementById("demo").innerHTML = "Параграф змінено.";
+                            }
+                        &lt;/script&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Веб-сторінка&lt;/h1&gt;
+                        &lt;p id="demo"&gt;Параграф&lt;/p&gt;
+                        &lt;button type="button" onclick="myFunction()"&gt;Сппробуй це&lt;/button&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </li>
+             <li>
+                <p>
+                    Помістити &lt;script&gt;...&lt;/script&gt; у &lt;body&gt;:
+                </p>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Веб-сторінка&lt;/h1&gt;
+                        &lt;p id="demo"&gt;Параграф&lt;/p&gt;
+                        &lt;button type="button" onclick="myFunction()"&gt;Спробуйте це&lt;/button&gt;
+
+                        &lt;script&gt;
+                            function myFunction() {
+                             document.getElementById("demo").innerHTML = "Параграф змінено.";
+                            }
+                        &lt;/script&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </li>
+             <li>
+                 <p>
+                    І найпоширеніший спосіб - помістити скрипти у &lt;head&gt але за допомогою зовнішнього файлу:
+                 </p>
+                 <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Веб-сторінка&lt;/h1&gt;
+                        &lt;p id="demo"&gt;Параграф&lt;/p&gt;
+                        &lt;button type="button" onclick="myFunction()"&gt;Спробуйте це&lt;/button&gt;
+
+                        &lt;script&gt; src="script.js" &lt;/script&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                 </pre>
+                 <p>
+                    Зовнішні скрипти зручні, так як розділяють HTML-код та
+                     JavaScript-код, що полегшує читання та підтримку окремо HTML та JavaScript.
+                </p>
+            </li>
+        </ol>
+
+
+    </section>
+
+</body>

@@ -164,10 +164,40 @@
                         "html_file": "topic.html",
                         "css_file": "topic.css"
                     },
-                    "result_btn": {
-                        "title": "Результат",
-                        "html_file": "result.html",
-                        "css_file": "result.css"
+                    "url_btn": {
+                        "title": "Способи функціонального застосування JavaScript. 1. Схема URL",
+                        "html_file": "url.html",
+                        "css_file": "url.css"
+                    },
+                    "event_handler_btn": {
+                        "title": "2. Обробник подій",
+                        "html_file": "event_handler.html",
+                        "css_file": "event_handler.css"
+                    },
+                    "entity_btn": {
+                        "title": "3. Підстановка (entity)",
+                        "html_file": "entity.html",
+                        "css_file": "entity.css"
+                    },
+                    "tag_script_btn": {
+                        "title": "4. Вставка (тег script)",
+                        "html_file": "tag_script.html",
+                        "css_file": "tag_script.css"
+                    },
+                    "task_1_btn": {
+                        "title": "Масиви. Пункт 4",
+                        "html_file": "task_1.html",
+                        "css_file": "task_1.css"
+                    },
+                    "task_2_btn": {
+                        "title": "Текстовий редактор. Пункт 6",
+                        "html_file": "task_2.html",
+                        "css_file": "task_2.css"
+                    },
+                    "task_3_btn": {
+                        "title": "Застосування JS у власному застосунку",
+                        "html_file": "task_3.html",
+                        "css_file": "task_3.css"
                     },
                     "conclusion_btn": {
                         "title": "Висновки до ЛР5",

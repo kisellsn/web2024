@@ -1,0 +1,59 @@
+<body>
+    <section class="inserted__title">
+         <h2>Події</h2>
+    </section>
+    <section class="inserted__content">
+        <p>
+            JavaScript дає можливість реагувати на різноманітні взаємодії
+            користувача з веб-браузером. Обробники подій - це функції,
+            які виконуються в залежності від конкретних дій користувача
+            або виникнення певних ситуацій на веб-сторінці.
+        </p>
+        <p>
+            Ось список деяких типових подій HTML:
+        </p>
+        <table>
+              <tr>
+                    <th>Подія</th>
+                    <th>Опис</th>
+              </tr>
+              <tr>
+                    <td>onchange</td>
+                    <td>HTML елемент було змінено</td>
+              </tr>
+              <tr>
+                    <td>onclick</td>
+                    <td>Користувач клікає HTML елемент</td>
+              </tr>
+              <tr>
+                    <td>onmouseover</td>
+                    <td>Користувач наводить курсор миші на HTML елемент</td>
+              </tr>
+              <tr>
+                    <td>onmouseout</td>
+                    <td>Користувач відводить курсор від HTML елемента</td>
+              </tr>
+              <tr>
+                    <td>onkeydown</td>
+                    <td>Користувач натискає клавішу на клавіатурі</td>
+              </tr>
+              <tr>
+                    <td>onload</td>
+                    <td>Браузер завершив завантаження сторінки</td>
+              </tr>
+        </table>
+        <p>
+            Простий приклад обробника подій при натисканні на кнопку з id = myButton:
+        </p>
+        <pre>
+            &lt;script&gt;
+                document.getElementById('myButton').addEventListener('click', function() {
+                  alert('Дякую!');
+                });
+            &lt;/script&gt;
+        </pre>
+        <div id="button"><button onclick="alert('Дякую!');" id="myButton">Натисніть мене</button></div>
+
+    </section>
+
+</body>

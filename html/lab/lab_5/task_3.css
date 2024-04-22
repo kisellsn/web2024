@@ -1,11 +1,5 @@
-.inserted__title  {
-    text-align: center;
-    h2{
-        padding-bottom: 1%;
-    }
-}
 .inserted__title {
-    background-color: #bda26b;
+    background-color: #a3c0e0;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -22,8 +16,12 @@
 .inserted__content p {
     margin-bottom: 15px;
 }
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-.inserted__content {
-    padding-top: 3%;
-    text-align: justify;
 }
