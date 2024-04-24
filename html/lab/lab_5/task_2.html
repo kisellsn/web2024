@@ -21,5 +21,60 @@
                 </div>
                 <div id="formatted-text" contenteditable="true"></div>
           </div>
+        <pre>
+            function applyStyle(style) {
+                var selection = window.getSelection();
+                if (selection.rangeCount > 0) {
+                    var range = selection.getRangeAt(0);
+
+                    if (!range.collapsed) {
+                        var span = document.createElement('span');
+                        span.classList.add(style);
+                        span.innerHTML = range.toString();
+
+                        range.deleteContents();
+                        range.insertNode(span);
+
+                    }
+                }
+            }
+            function applyStyle2(style) {
+                var textarea = document.getElementById('formatted-text');
+                if (textarea.classList.contains(style)) {
+                    textarea.classList.remove(style);
+                } else {
+                    textarea.classList.add(style);
+                }
+            }
+            function changeTextColor() {
+                var color = document.getElementById("myColor").value;
+                var textarea = document.getElementById('formatted-text');
+                textarea.style.color = color;
+            }
+
+            function changeColor() {
+                var mycolor = document.getElementById("myColor").value;
+                document.execCommand('foreColor', false, mycolor);
+            }
+
+            function changeCase() {
+                var textarea = document.getElementById('formatted-text');
+                var selectedText = window.getSelection().toString();
+
+                if (selectedText !== '') {
+                    var newCaseButton = document.getElementById('change-case-button');
+                    var newCase = newCaseButton.classList.contains('lowercase') ? 'l' : 'u';
+                    var newText = (newCase === 'l') ? selectedText.toLowerCase() : selectedText.toUpperCase();
+                    newCaseButton.classList.toggle('lowercase');
+                    newCaseButton.classList.toggle('uppercase');
+
+                    var selection = window.getSelection();
+                    var range = selection.getRangeAt(0);
+                    range.deleteContents();
+                    range.insertNode(document.createTextNode(newText));
+                }
+            }
+
+        </pre>
     </section>
 </body>

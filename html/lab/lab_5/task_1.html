@@ -21,5 +21,69 @@
             <p>Масив із переставленими елементами (максимальним і першим): <br><span id="swapped_array"></span></p>
             <p>Масив, відсортований методом бульбашки у порядку зростання: <br><span id="sorted_array"></span></p>
         </p>
+        <pre>
+            function generateRandomArray(size, min, max) {
+                let randomArray = [];
+                for (let i = 0; i < size; i++) {
+                    let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                    randomArray.push(randomNumber);
+                }
+                return randomArray;
+            }
+
+            const arrayC = [];
+            function buildArrayC() {
+                let arraySize = 10;
+                let minNumber = 1;
+                let maxNumber = 100;
+
+                let arrayA = generateRandomArray(arraySize, minNumber, maxNumber);
+                let arrayB = generateRandomArray(arraySize, minNumber, maxNumber);
+                insertToElem(arrayA, 'array_A');
+                insertToElem(arrayB, 'array_B');
+
+                for (let i = 0; i < arrayA.length; i++) {
+                    let elementC;
+                    if( arrayA[i] === arrayB[i]){
+                        elementC = 1;
+                    } else {
+                        elementC = 1 / (arrayA[i] - arrayB[i]);
+                    }
+                    arrayC.push(elementC.toFixed(2));
+                }
+                insertToElem(arrayC, 'array_C');
+                insertToElem(swapMaxWithFirst(arrayC), 'swapped_array');
+                insertToElem(bubbleSort(arrayC), 'sorted_array');
+
+            }
+            function insertToElem(array, id) {
+                document.getElementById(id).innerText = array.toString();
+            }
+            function swapMaxWithFirst(array) {
+                let maxIndex = 0;
+                for (let i = 1; i < array.length; i++) {
+                    if (array[i] > array[maxIndex]) {
+                        maxIndex = i;
+                    }
+                }
+                let temp = array[maxIndex];
+                array[maxIndex] = array[0];
+                array[0] = temp;
+                return array;
+            }
+            function bubbleSort(array) {
+                let len = array.length;
+                for (let i = 0; i < len - 1; i++) {
+                    for (let j = 0; j < len - 1 - i; j++) {
+                        if (array[j] > array[j + 1]) {
+                            let temp = array[j];
+                            array[j] = array[j + 1];
+                            array[j + 1] = temp;
+                        }
+                    }
+                }
+                return array;
+            }
+        </pre>
     </section>
 </body>
