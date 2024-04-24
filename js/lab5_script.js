@@ -1,3 +1,16 @@
+var textColor = "blue";
+function changeTextColorEntity() {
+      var dynamicText = document.getElementById("dynamic-text");
+      if (dynamicText.style.color === "blue") {
+            dynamicText.style.color = "red";
+            textColor = "red";
+      } else {
+            dynamicText.style.color = "blue";
+            textColor = "blue";
+      }
+}
+
+
 function generateRandomArray(size, min, max) {
     let randomArray = [];
     for (let i = 0; i < size; i++) {

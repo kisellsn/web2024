@@ -65,7 +65,13 @@ pre {
     margin-bottom: 10px;
 
 }
-
+:root {
+    --textColor: #b92525;
+}
+#dynamic-text {
+    font-size: 24px;
+    color: var(--textColor);
+}
 a {
     background-color: #ad88b7;
     color: #fff;
