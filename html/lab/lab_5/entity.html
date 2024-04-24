@@ -11,42 +11,42 @@
             і може змінюватися на льоту відповідно до сценарію, що маніпулює ним.
             Синтаксис сутності JavaScript виглядає так:  <pre> &{ JavaScript-вирази };</pre> і використовуються як значення атрибутів HTML-контейнерів.
         </p>
-        <pre>
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-                &lt;title&gt;Dynamic Text Color&lt;/title&gt;
-                &lt;style&gt;
-                    #dynamic-text {
-                      font-size: 24px;
-                      color: &amp;{textColor};
-                    }
-                &lt;/style&gt;
-                &lt;script&gt;
-                    var textColor = "blue";
-                    function changeTextColor() {
-                          var dynamicText = document.getElementById("dynamic-text");
-                          if (dynamicText.style.color === "blue") {
-                                dynamicText.style.color = "red";
-                                textColor = "red";
-                          } else {
-                                dynamicText.style.color = "blue";
-                                textColor = "blue";
-                          }
-                    }
-                &lt;/script&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                  &lt;p id="dynamic-text"&gt;Цей текст змінює колір при кліку.&lt;/p&gt;
-                  &lt;button onclick="changeTextColor()"&gt;Змінити колір тексту&lt;/button&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </pre>
-        <p>
-            У цьому прикладі, колір тексту змінюється з блакитного на червоний та навпаки кожного разу, коли користувач клікає на кнопку "Змінити колір тексту". Використання сутності &{textColor} в CSS дозволяє динамічно встановлювати колір тексту за допомогою JavaScript.
-        </p>
-        <p id="dynamic-text">Цей текст змінює колір при кліку.</p>
-        <button onclick="changeTextColorEntity()">Змінити колір тексту</button>
+<!--        <pre>-->
+<!--            &lt;!DOCTYPE html&gt;-->
+<!--            &lt;html&gt;-->
+<!--            &lt;head&gt;-->
+<!--                &lt;title&gt;Dynamic Text Color&lt;/title&gt;-->
+<!--                &lt;style&gt;-->
+<!--                    #dynamic-text {-->
+<!--                      font-size: 24px;-->
+<!--                      color: &amp;{textColor};-->
+<!--                    }-->
+<!--                &lt;/style&gt;-->
+<!--                &lt;script&gt;-->
+<!--                    var textColor = "blue";-->
+<!--                    function changeTextColor() {-->
+<!--                          var dynamicText = document.getElementById("dynamic-text");-->
+<!--                          if (dynamicText.style.color === "blue") {-->
+<!--                                dynamicText.style.color = "red";-->
+<!--                                textColor = "red";-->
+<!--                          } else {-->
+<!--                                dynamicText.style.color = "blue";-->
+<!--                                textColor = "blue";-->
+<!--                          }-->
+<!--                    }-->
+<!--                &lt;/script&gt;-->
+<!--            &lt;/head&gt;-->
+<!--            &lt;body&gt;-->
+<!--                  &lt;p id="dynamic-text"&gt;Цей текст змінює колір при кліку.&lt;/p&gt;-->
+<!--                  &lt;button onclick="changeTextColor()"&gt;Змінити колір тексту&lt;/button&gt;-->
+<!--            &lt;/body&gt;-->
+<!--            &lt;/html&gt;-->
+<!--        </pre>-->
+<!--        <p>-->
+<!--            У цьому прикладі, колір тексту змінюється з блакитного на червоний та навпаки кожного разу, коли користувач клікає на кнопку "Змінити колір тексту". Використання сутності &{textColor} в CSS дозволяє динамічно встановлювати колір тексту за допомогою JavaScript.-->
+<!--        </p>-->
+<!--        <p id="dynamic-text">Цей текст змінює колір при кліку.</p>-->
+<!--        <button onclick="changeTextColorEntity()">Змінити колір тексту</button>-->
     </section>
 </body>
 
