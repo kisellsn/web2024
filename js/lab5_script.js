@@ -15,8 +15,8 @@ function buildArrayC() {
 
     let arrayA = generateRandomArray(arraySize, minNumber, maxNumber);
     let arrayB = generateRandomArray(arraySize, minNumber, maxNumber);
-    pasteArrayToElem(arrayA, 'array_A');
-    pasteArrayToElem(arrayB, 'array_B');
+    insertToElem(arrayA, 'array_A');
+    insertToElem(arrayB, 'array_B');
 
     for (let i = 0; i < arrayA.length; i++) {
         let elementC;
@@ -27,12 +27,12 @@ function buildArrayC() {
         }
         arrayC.push(elementC.toFixed(2));
     }
-    pasteArrayToElem(arrayC, 'array_C');
-    pasteArrayToElem(swapMaxWithFirst(arrayC), 'swapped_array');
-    pasteArrayToElem(bubbleSort(arrayC), 'sorted_array');
+    insertToElem(arrayC, 'array_C');
+    insertToElem(swapMaxWithFirst(arrayC), 'swapped_array');
+    insertToElem(bubbleSort(arrayC), 'sorted_array');
 
 }
-function pasteArrayToElem(array, id) {
+function insertToElem(array, id) {
     document.getElementById(id).innerText = array.toString();
 }
 function swapMaxWithFirst(array) {
