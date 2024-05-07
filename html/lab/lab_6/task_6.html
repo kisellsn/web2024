@@ -1,0 +1,46 @@
+<body>
+    <section class="inserted__title">
+      <h2>Javascript у MeloHub</h2>
+    </section>
+    <section class="inserted__content">
+          <div id="controls">
+                <input type="number" min="1" max="100" step="1" />
+                <button type="button" onclick="createBoxes()" data-create>Create</button>
+                <button type="button" onclick="destroyBoxes()" data-destroy>Destroy</button>
+          </div>
+
+          <div id="boxes"></div>
+
+          <p>
+              <span>JS script:</span>
+              <img width="100%" alt="" src="../../../../web2024/img/lab6_task10.png"/>
+              <img width="100%" alt="" src="../../../../web2024/img/lab6_task102.png"/>
+          </p>
+    </section>
+</body>
+<style>
+    #controls {
+      margin-bottom: 20px;
+    }
+
+    #controls input {
+      padding: 5px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #controls button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #controls button:hover {
+      background-color: #45a049;
+    }
+
+</style>
