@@ -1,28 +1,55 @@
 <body>
     <section class="inserted__title">
-      <h2>Завдання 2 Текстовий редактор:</h2>
+      <h2>Завдання 3:</h2>
     </section>
     <section class="inserted__content">
-          <p>
-              З об'єкту medicines потрібно отримати масив в якому будуть лише назви препаратів.
-
-З масиву  потрібно прибрати медикаменти , в яких строк зберігання  уже пройшов . У новому масиві відсортувати медикаменти  у хронологічному порядку.
-Результат вивести у консоль.
-Застосувати стрілочні функції
-
-          </p>
-          <div class="editor-container">
-                <div id="format-buttons">
-                    <button onclick="document.execCommand('bold',false,null);">Напівжирний</button>
-                    <button onclick="document.execCommand('italic',false,null);">Нахил</button>
-                    <button onclick="document.execCommand('underline',false,null);">Підкреслений</button>
-<!--                    <button onclick="applyStyle2('bold')">Напівжирний</button>-->
-<!--                    <button onclick="applyStyle2('italic')">Нахил</button>-->
-<!--                    <button onclick="applyStyle2('underline')">Підкреслений</button>-->
-                    <label for="myColor">Колір тексту</label><input class="color-apply" type="color" onchange="changeColor()" id="myColor">
-                    <button id="change-case-button" class="lowercase" onclick="changeCase()">Регістр</button>
-                </div>
-                <div id="formatted-text" contenteditable="true"></div>
-          </div>
+        <p>
+            З об'єкту medicines потрібно отримати масив в якому будуть лише назви препаратів.
+            <br>З масиву  потрібно прибрати медикаменти , в яких строк зберігання  уже пройшов . У новому масиві відсортувати медикаменти  у хронологічному порядку.
+            <br>Результат вивести у консоль.
+            <br>Застосувати стрілочні функції
+        </p>
+        <button onclick="displaySortedMedicines()" type="button">Показати відсортовані медикаменти</button>
+        <p>
+            <span>JS script:</span>
+            <img width="100%" alt="" src="../../../../web2024/img/lab5_1_task3.png"/>
+        </p>
     </section>
 </body>
+<style>
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #976b0cc7;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9a8503;
+    }
+</style>

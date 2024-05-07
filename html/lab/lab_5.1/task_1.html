@@ -9,7 +9,64 @@
             <br><b>logProduct(product)</b> - колббек що приймає об'єкт продукту і логуючий його в консоль
             <br><b>logTotalPrice(product)</b> - колббек, що приймає об'єкт продукту і логіює загальну вартість товару в консоль
         </p>
+        <form id="productForm">
+            <label for="productName">Назва товару:</label>
+            <input type="text" id="productName" name="productName" required><br><br>
+
+            <label for="productPrice">Ціна за одиницю:</label>
+            <input type="number" id="productPrice" name="productPrice" required><br><br>
+
+            <label for="productQuantity">Кількість одиниць товару:</label>
+            <input type="number" id="productQuantity" name="productQuantity" required><br><br>
+
+            <input type="radio" id="logProduct" name="logType" value="logProduct" checked>
+            <label for="logProduct">Логувати продукт</label><br>
+
+            <input type="radio" id="logTotalPrice" name="logType" value="logTotalPrice">
+            <label for="logTotalPrice">Логувати загальну вартість</label><br><br>
+
+            <button onclick="generateProduct()" type="button">Створити обʼєкт продукту</button>
+        </form>
         <p>
+            <span>JS script:</span>
+            <img width="100%" alt="" src="../../../../web2024/img/lab5_1_task1.png"/>
         </p>
     </section>
 </body>
+<style>
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #976b0cc7;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9a8503;
+    }
+</style>

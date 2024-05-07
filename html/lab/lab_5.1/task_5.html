@@ -1,19 +1,52 @@
 <body>
     <section class="inserted__title">
-      <h2>Javascript у MeloHub</h2>
+      <h2>Завдання 9:</h2>
     </section>
     <section class="inserted__content">
-          <p>
-              У моєму Веб-застосунку MeloHub також були використані скрипти js. Ондим із прикладів може бути зміна
-              класів обʼєкта з Id = menu_icon на головній сторінці застосунку,
-              таким чином щоб при різній ширині екрану змінювалась видимість зображення.
-          </p>
-          <pre>
-              const menu_icon = document.getElementById('menu_icon');
-              const nav = document.querySelector('nav');
-              menu_icon.addEventListener('click', function() {
-                    nav.classList.toggle('active');
-              });
-          </pre>
+        <p>
+            Поверніть об'єкт, в якому вказано кількість тегів.
+        </p>
+        <button onclick="calculateTagCount()" type="button">Порахувати теги</button>
+        <p>
+            <span>JS script:</span>
+            <img width="100%" alt="" src="../../../../web2024/img/lab5_1_task9.png"/>
+        </p>
     </section>
 </body>
+<style>
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #976b0cc7;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9a8503;
+    }
+</style>

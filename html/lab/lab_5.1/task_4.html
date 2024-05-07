@@ -1,19 +1,61 @@
 <body>
     <section class="inserted__title">
-      <h2>Javascript у MeloHub</h2>
+      <h2>Завдання 7:</h2>
     </section>
     <section class="inserted__content">
-          <p>
-              У моєму Веб-застосунку MeloHub також були використані скрипти js. Ондим із прикладів може бути зміна
-              класів обʼєкта з Id = menu_icon на головній сторінці застосунку,
-              таким чином щоб при різній ширині екрану змінювалась видимість зображення.
-          </p>
-          <pre>
-              const menu_icon = document.getElementById('menu_icon');
-              const nav = document.querySelector('nav');
-              menu_icon.addEventListener('click', function() {
-                    nav.classList.toggle('active');
-              });
-          </pre>
+        <p>
+            Напиши клас Client який створює об'єкт з властивостями login email
+            <br>Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
+        </p>
+        <form id="clientForm">
+            <label for="login">login:</label>
+            <input type="text" id="login" name="login" required><br><br>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <button onclick="generateClient()" type="button">Створити client</button>
+        </form>
+        <p>
+            <span>JS script:</span>
+            <img width="100%" alt="" src="../../../../web2024/img/lab5_1_task7.png"/>
+        </p>
     </section>
 </body>
+<style>
+    form {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #976b0cc7;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9a8503;
+    }
+</style>

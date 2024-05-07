@@ -232,23 +232,18 @@
                     },
                     "task_7_btn": {
                         "title": "Завдання 7",
-                        "html_file": "task_3.html",
+                        "html_file": "task_4.html",
                         "css_file": "task_3.css"
                     },
                     "task_9_btn": {
                         "title": "Завдання 9",
-                        "html_file": "task_3.html",
+                        "html_file": "task_5.html",
                         "css_file": "task_3.css"
                     },
                     "task_10_btn": {
                         "title": "Завдання 10",
-                        "html_file": "task_3.html",
+                        "html_file": "task_6.html",
                         "css_file": "task_3.css"
-                    },
-                    "conclusion_btn": {
-                        "title": "Висновки до ЛР5.1",
-                        "html_file": "conclusion.html",
-                        "css_file": "conclusion.css"
                     }
                 }
             },
