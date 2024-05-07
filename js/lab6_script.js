@@ -17,10 +17,12 @@ function lab6_task3() {
 }
 
 window.addEventListener('click', function(event) {
-      var placeDiv = document.getElementById('place');
-      var clickedInside = placeDiv.contains(event.target);
-
-      console.log(clickedInside);
+      try {
+            var placeDiv = document.getElementById('place');
+            var clickedInside = placeDiv.contains(event.target);
+            console.log(clickedInside);
+      }catch (error) {
+      }
 });
 function lab6_task7(){
       const categoriesList = document.querySelectorAll('#categories .item');
