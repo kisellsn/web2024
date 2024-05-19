@@ -287,6 +287,27 @@
                         "css_file": "task_3.css"
                     }
                 }
+            },
+            "lb7": {
+                "title": "Лаб7",
+                "rel_path": "./html/lab/lab_7/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Тема, мета місце розташування лаби №7",
+                        "html_file": "topic.html",
+                        "css_file": "topic.css"
+                    },
+                    "task_1_btn": {
+                        "title": "Завдання 1",
+                        "html_file": "task1.html",
+                        "css_file": "task1.css"
+                    },
+                    "task_2_btn": {
+                        "title": "Завдання 3",
+                        "html_file": "task2.html",
+                        "css_file": "task2.css"
+                    }
+                }
             }
         }
     }

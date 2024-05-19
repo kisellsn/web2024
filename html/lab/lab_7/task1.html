@@ -1,0 +1,86 @@
+<body>
+    <img src="../../../../web2024/img/lab7_1.png" width="100%" alt=""/>
+
+    <h2>HTML</h2>
+    <pre class="prettyprint">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Photo Gallery&lt;/title&gt;
+            &lt;link rel="stylesheet" href="./CSS/style.css"&gt;
+            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;ul class="gallery"&gt;&lt;/ul&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"&gt;&lt;/script&gt;
+            &lt;script src="./JS/gallery.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    </pre>
+    <h2>JS</h2>
+    <pre class="prettyprint">
+        const images = [
+            {
+                preview: '../../web2024_7/photos/img.png',
+                original: '../../web2024_7/photos/img.png',
+                description: 'зображення 1',
+            },
+            {
+                preview: '../../web2024_7/photos/img_1.png',
+                original: '../../web2024_7/photos/img_1.png',
+                description: 'зображення 2',
+            },
+            {
+                preview: '../../web2024_7/photos/img_2.png',
+                original: '../../web2024_7/photos/img_2.png',
+                description: 'зображення 3',
+            },
+            {
+                preview: '../../web2024_7/photos/img_3.png',
+                original: '../../web2024_7/photos/img_3.png',
+                description: 'зображення 4',
+            },
+            {
+                preview: '../../web2024_7/photos/img_4.png',
+                original: '../../web2024_7/photos/img_4.png',
+                description: 'зображення 5',
+            },
+            {
+                preview: '../../web2024_7/photos/img_5.png',
+                original: '../../web2024_7/photos/img_5.png',
+                description: 'зображення 6',
+            },
+
+        ];
+
+        const galleryContainer = document.querySelector('.gallery');
+
+        const galleryMarkup = images.map(({ preview, original, description }) => {
+            return `
+                <li>
+                    <img src="${preview}" data-source="${original}" alt="${description}">
+                </li>
+            `;
+        }).join('');
+
+        galleryContainer.innerHTML = galleryMarkup;
+
+        galleryContainer.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const isImage = event.target.nodeName === 'IMG';
+            if (!isImage) return;
+
+            const originalImageURL = event.target.dataset.source;
+            console.log(originalImageURL);
+
+            const instance = basicLightbox.create(`
+                <img src="${originalImageURL}" alt="${event.target.alt}">
+            `);
+
+            instance.show();
+        });
+
+    </pre>
+</body>

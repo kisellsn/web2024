@@ -1,0 +1,74 @@
+<body>
+    <img src="../../../../web2024/img/lab7_2.png" width="100%" alt=""/>
+
+    <h2>HTML</h2>
+    <pre class="prettyprint">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Feedback Form&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;form class="feedback-form" autocomplete="off"&gt;
+                &lt;label&gt;
+                    Email
+                    &lt;input type="email" name="email" autofocus /&gt;
+                &lt;/label&gt;
+                &lt;label&gt;
+                    Message
+                    &lt;textarea name="message" rows="8"&gt;&lt;/textarea&gt;
+                &lt;/label&gt;
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+            &lt;script src="2-form.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h2>JS</h2>
+    <pre class="prettyprint">
+        const formData = {
+            email: "",
+            message: ""
+        };
+
+        const form = document.querySelector('.feedback-form');
+
+        form.addEventListener('input', (event) => {
+            formData[event.target.name] = event.target.value;
+            localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedData = localStorage.getItem('feedback-form-state');
+            console.log(savedData);
+            if (savedData) {
+                const savedFormData = JSON.parse(savedData);
+                formData.email = savedFormData.email;
+                formData.message = savedFormData.message;
+                form.elements.email.value = formData.email;
+                form.elements.message.value = formData.message;
+            }
+        });
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (!formData.email || !formData.message) {
+                alert('Fill please all fields');
+                return;
+            }
+
+            console.log(formData);
+
+            localStorage.removeItem('feedback-form-state');
+            formData.email = "";
+            formData.message = "";
+            form.reset();
+        });
+
+
+    </pre>
+</body>
