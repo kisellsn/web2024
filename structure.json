@@ -308,6 +308,73 @@
                         "css_file": "task2.css"
                     }
                 }
+            },
+            "lb8": {
+                "title": "Лаб8",
+                "rel_path": "./html/lab/lab_8/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Cертифікат",
+                        "html_file": "certificate.html",
+                        "css_file": "certificate.css"
+                    },
+                    "task_1_btn": {
+                        "title": "Оцінка",
+                        "html_file": "task1.html",
+                        "css_file": "task1.css"
+                    },
+                    "task_2_btn": {
+                        "title": "Тиждень 1",
+                        "html_file": "task2.html",
+                        "css_file": "task2.css"
+                    },
+                    "task_3_btn": {
+                        "title": "Тиждень 2",
+                        "html_file": "task3.html",
+                        "css_file": "task2.css"
+                    },
+                    "task_4_btn": {
+                        "title": "Тиждень 3",
+                        "html_file": "task4.html",
+                        "css_file": "task2.css"
+                    },
+                    "task_5_btn": {
+                        "title": "Тиждень 4",
+                        "html_file": "task5.html",
+                        "css_file": "task2.css"
+                    }
+                }
+            },
+            "lb9": {
+                "title": "Лаб9",
+                "rel_path": "./html/lab/lab_9/",
+                "buttons": {
+                    "topic_btn": {
+                        "title": "Cертифікат",
+                        "html_file": "certificate.html",
+                        "css_file": "certificate.css"
+                    },
+                    "task_1_btn": {
+                        "title": "Оцінка",
+                        "html_file": "task1.html",
+                        "css_file": "task1.css"
+                    },
+                    "task_2_btn": {
+                        "title": "Тиждень 1",
+                        "html_file": "task2.html",
+                        "css_file": "task2.css"
+                    },
+                    "task_3_btn": {
+                        "title": "Тиждень 2",
+                        "html_file": "task3.html",
+                        "css_file": "task2.css"
+                    },
+                    "task_4_btn": {
+                        "title": "Тиждень 3",
+                        "html_file": "task4.html",
+                        "css_file": "task2.css"
+                    }
+                }
             }
         }
     }
